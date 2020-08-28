@@ -6,7 +6,7 @@ import { ProfileService } from './../profile.service';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
-export class ProfileComponent implements OnInit {
+export class profilecomponent implements OnInit {
   profile:any[];
   repos:any[];
   username:string;
