@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from './../profile.service';
+import { Profile, Repo } from '../../interfaces';
 
 @Component({
   selector: 'app-profile',
@@ -7,27 +8,26 @@ import { ProfileService } from './../profile.service';
   styleUrls: ['./profile.component.css']
 })
 export class profilecomponent implements OnInit {
-  profile:any[];
-  repos:any[];
+  profile: Profile;
+  repos: Repo[];
   username:string;
 
-  constructor(private profileService: ProfileService) {
-    
+  constructor(private profileService: ProfileService) {}
+   
+  findProfile() {
+    this.profileService.updateProfile(this.username);
+    this.profileService.getProfileInfo()
+      .subscribe((profile: any) => {
+        console.log(profile);
+        this.profile = profile;
+      });
+
+    this.profileService.getProfileRepos()
+      .subscribe((repos: any) => {
+        console.log(repos);
+        this.repos = repos;
+      })
    }
-   findProfile(){
-     this.profileService.updateProfile(this.username);
-     this.profileService.getProfileInfo().subscribe(profile =>{
-      console.log(profile);
-      this.profile = profile;
-    });
 
-    this.profileService.getProfileRepos().subscribe(repos =>{
-      console.log(repos);
-      this.repos = repos;
-    })
-   }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

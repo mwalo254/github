@@ -5,10 +5,11 @@ import { HomeComponent } from './home/home.component';
 
 
 
-const routes: Routes = [
-  {path: 'profile', component:profilecomponent},
-  {path: 'home', component:HomeComponent},
-];
+const routes: Routes = [{
+  path: 'profile', component: profilecomponent
+}, {
+  path: 'home', component: HomeComponent
+}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
