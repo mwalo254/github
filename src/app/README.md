@@ -1,12 +1,14 @@
-##This project was generated with Angular CLI version 8.2.1.
+##This project was generated with Angular CLI version 10.0.6.
 
 #Author
 nick mwalo
 
 #Email & Contacts
+
 mwalonick@gmail.com
 
 ##Project Description
+
 An angular Git-search application where users can search through using their git user names and a list of their public repositories is generated. The application uses the github API to access this information. By default, the application displays github username and the details of you github i.e repositories
 
 #Technologies used
@@ -36,7 +38,7 @@ There are currently no known bugs. Incase you come accross one email me at mwalo
 
 
 ##BDD
-User Input	Output	App behaviour
+#User Input	#Output	#App behaviour
 Enter github user name	Github user name	Lists out a list of repositories
 License
 MIT license
