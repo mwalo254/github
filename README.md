@@ -9,7 +9,7 @@ nick mwalo
 # Email
 
 mwalonick@gmail.com
-
+contacts: 0792147071
 ## project description
 
 An angular Git-search application where users can search through using their git user names and a list of their public repositories is generated. The application uses the github API to access this information. By default, the application displays github username and the details of you github i.e repositories
