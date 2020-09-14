@@ -13,11 +13,17 @@ An angular Git-search application where users can search through using their git
 
 #Technologies used
 Typescript
+
 Javascript
+
 HTML
+
 CSS
+
 Bootstrap
+
 Development
+
 Want to contribute? Great!!
 
 ##Fork the repo
